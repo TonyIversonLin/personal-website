@@ -44,6 +44,9 @@ hr {
 	margin-top:50px;
 }
 
+iframe {
+}
+
 footer, .project {
 	padding: 30px;
 }
@@ -72,5 +75,14 @@ footer {
 
 img.work-demo{
 	margin: 5px;
+	box-shadow: 1px 1px 10px 0px grey;
+	margin-bottom: 10px;
+}
+
+.iframe-position{
+	left: 6px;
+	top: 15px;
+	border: 0px solid #ddd;
+	border-radius: 6px;
 	box-shadow: 1px 1px 10px 0px grey;
 }
