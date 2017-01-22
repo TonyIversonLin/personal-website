@@ -11,17 +11,18 @@ header {
 	background-position: center center;
 	background-repeat: no-repeat;
 	font-weight: bold;
-	color: white;
 	text-shadow: 2px 2px 10px #000000;
 }header p {
-	font-size: 16px;
-	font-weight: normal;
-	opacity: 0.8;
+	font-size: 18px;
+	font-weight: 500;
+	opacity: 0.9;
+	color: white;
 }
 
 h1 {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 50px;
+	color: white;
 }
 
 h2 {
@@ -38,6 +39,8 @@ a:hover {
 
 p {
 	font-weight: lighter;
+	line-height: 26px;
+	color: #868686;
 }
 
 hr {
@@ -85,4 +88,20 @@ img.work-demo{
 	border: 0px solid #ddd;
 	border-radius: 6px;
 	box-shadow: 1px 1px 10px 0px grey;
+}
+
+#disable {
+	position: relative;
+}
+
+#hover-text {
+	display: none;
+}
+
+#disable:hover span{
+	display: none;
+}
+
+#disable:hover:before{
+	content: 'Under Maintenance';
 }
