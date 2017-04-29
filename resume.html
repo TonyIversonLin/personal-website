@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resume - Tony Lin</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://use.fontawesome.com/821afdbeaf.js"></script>
+	<link rel="stylesheet" type="text/css" href="basic.css">
+	<link rel="stylesheet" type="text/css" href="resume.css">	
+</head>
+<body>
+	<nav>
+		<ul>
+			<li id='logo'><span>Tony Lin</span></li>
+			<li class="nav-link"><a>Contact</a></li>
+			<li class="nav-link"><a>Gallery</a></li>
+			<li class="nav-link"><a href="resume.html">Experience</a></li>
+			<li class="nav-link"><a>Portfolio</a></li>
+			<li class="nav-link"><a href="index2.html">About</a></li>
+		</ul>
+	</nav>
+
+	<header>
+		<h1>Work Experience</h1>
+		<h5>& Education</h5>
+	</header>
+
+	<div class="container" id='experience'>
+		<canvas id="canvas" width="70" height="70">
+		</canvas>
+		<div class="row">
+			<div class="col-md-9 center">
+
+				<div class="row">
+					<i class="fa fa-university fa-2x" aria-hidden="true"></i>
+					<div class="col-md-6 left date"><h4>Jan 2017 - Current</h4></div>	
+					<div class="col-md-6 right">
+						<h4>Touro Graduate School of Technology</h4>
+						<h5>M.S Informatoin System</h5>
+						<p>
+							Joint a 5 month immersive training program that focus on fullstack web development using Javascript. In there, I was exposed to a variety mainstream web front-end and back-end technology (like NodeJS, ReactJS), which help me to build advance single page web application. I was also able to experience the full web development cycle.
+						</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<i class="fa fa-code fa-2x" aria-hidden="true"></i>
+					<div class="col-md-6 right date"><h4>May 2016 - Nov 2016</h4></div>	
+					<div class="col-md-6 left">
+						<h4>Fullstack Academy</h4>
+						<h5>BootCamp Training</h5>
+						<p>
+							Joint a 5 month immersive training program that focus on fullstack web development using Javascript. In there, I was exposed to a variety mainstream web front-end and back-end technology (like NodeJS, ReactJS), which help me to build advance single page web application. I was also to experience the full web development cycle.
+						</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<i class="fa fa-cogs fa-2x" aria-hidden="true"></i>
+					<div class="col-md-6 left date"><h4>June 2014 - May 2016</h4></div>	
+					<div class="col-md-6 right">
+						<h4>T&A IT Business Consulting</h4>
+						<h5>Engineering Consulting Trainee</h5>
+						<p>
+							Performing basic engineering analysis and project management;
+							Help to document the infrastructure information of building for the construction cost estimate team;
+							Use AutoCAD, Solidworks, and Matlab for multi-degree freedom dynamic system modeling.
+						</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<i class="fa fa-search fa-2x" aria-hidden="true"></i>
+					<div class="col-md-6 right date"><h4>Summer 2013</h4></div>	
+					<div class="col-md-6 left">
+						<h4>Gait Performance Optimization Independent Research</h4>
+						<h5>Researcher & Analyst</h5>
+						<p>
+							This research was conducted during my time of study in University of Michigan. I developed an interface that interact with multiple advanced metabolic devices and data acquisition hardware to capture human performance in a walking experiment; effectively implemented signal conditioning on raw data, improving signal filtering; developed a dynamic model of human walking system by implementing Matlab System Identification
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<p class="copyright">&copy 2017 Tony Lin. All rights reserve</p>
+		<p class="social-link">
+				<a><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a>
+				<a><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
+				<a><i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i></a>
+				<a><i class="fa fa-github-square fa-lg" aria-hidden="true"></i></a>
+				<a><i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i></a>
+		</p>
+	</footer>
+
+	<script type="text/javascript">
+		var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+		var radius = canvas.height / 2;
+		ctx.translate(radius, radius);
+		radius = radius * 0.90
+		//drawClock();
+		setInterval(drawClock, 1000);
+
+
+		function drawClock() {
+		  drawFace(ctx, radius);
+		  drawNumbers(ctx, radius);
+		  drawTime(ctx, radius);
+		}
+
+		function drawFace(ctx, radius) {
+		  var grad;
+		  ctx.beginPath();
+		  ctx.arc(0, 0, radius, 0, 2*Math.PI);
+		  ctx.fillStyle = 'white';
+		  ctx.fill();
+		  grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
+		  grad.addColorStop(0, '#333');
+		  grad.addColorStop(0.5, 'white');
+		  grad.addColorStop(1, '#333');
+		  ctx.strokeStyle = grad;
+		  ctx.lineWidth = radius*0.1;
+		  ctx.stroke();
+		  ctx.beginPath();
+		  ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
+		  ctx.fillStyle = '#333';
+		  ctx.fill();
+		}
+
+		function drawNumbers(ctx, radius) {
+		  var ang;
+		  var num;
+		  ctx.font = radius*0.30 + "px arial";
+		  ctx.textBaseline="middle";
+		  ctx.textAlign="center";
+		  for(num = 1; num < 13; num++){
+		    ang = num * Math.PI / 6;
+		    ctx.rotate(ang);
+		    ctx.translate(0, -radius*0.85);
+		    ctx.rotate(-ang);
+		    ctx.fillText(num.toString(), 0, 0);
+		    ctx.rotate(ang);
+		    ctx.translate(0, radius*0.85);
+		    ctx.rotate(-ang);
+		  }
+		}
+
+		function drawTime(ctx, radius){
+		    var now = new Date();
+		    var hour = now.getHours();
+		    var minute = now.getMinutes();
+		    var second = now.getSeconds();
+		    //hour
+		    hour=hour%12;
+		    hour=(hour*Math.PI/6)+
+		    (minute*Math.PI/(6*60))+
+		    (second*Math.PI/(360*60));
+		    drawHand(ctx, hour, radius*0.5, radius*0.07);
+		    //minute
+		    minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
+		    drawHand(ctx, minute, radius*0.8, radius*0.07);
+		    // second
+		    second=(second*Math.PI/30);
+		    drawHand(ctx, second, radius*0.9, radius*0.02);
+		}
+
+		function drawHand(ctx, pos, length, width) {
+		    ctx.beginPath();
+		    ctx.lineWidth = width;
+		    ctx.lineCap = "round";
+		    ctx.moveTo(0,0);
+		    ctx.rotate(pos);
+		    ctx.lineTo(0, -length);
+		    ctx.stroke();
+		    ctx.rotate(-pos);
+		}
+	</script>
+</body>
+</html>
