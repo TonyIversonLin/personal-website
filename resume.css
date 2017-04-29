@@ -36,7 +36,13 @@ header h1 ,header h5 {
 	from {transform: translateY(200%); opacity: 0;}
 	to {transform: translateY(0%); opacity: 1;}
 }
-#experience .row{
+
+
+
+#experience {
+	padding: 5rem 0;
+	position: relative;
+}#experience .row{
 	position: relative;
 }
 #experience canvas {
@@ -54,12 +60,9 @@ header h1 ,header h5 {
 	color: grey;
 	border-radius: 50%;
 	box-shadow: 4px 4px 7px 0px grey;
-}
-
-#experience {
-	padding: 5rem 0;
-}
-#experience .right {
+	background-color: white;
+	z-index: 1;
+}#experience .right {
 	text-align: right;
 	float: left;
 	padding: 0 5rem 2rem 5rem;
@@ -71,12 +74,31 @@ header h1 ,header h5 {
 	font-style: italic;
 	color: rgb(13, 164, 214);
 	font-weight: bold;
-}#experience h4 {
+}#experience .date h4 {
+	display: inline-block;
 	text-transform: capitalize;
+	border-radius: 1.5rem;
+	background-color: #03a9f4;
+	color: white;
+	padding: 1.5rem;
+	margin-top: 0;
 }#experience p {
 	opacity: 0.7;
-}#experience .date {
-
+}#experience #centerline {
+	position: absolute;
+	z-index: 0;
+	height: 100%;
+	width: 2px;
+	left: 50%;
+	top: 0;
+	padding: 8rem 0;
+	padding-top: 15rem;
+}#experience #centerline div {
+	border: 1px dotted grey;
+	height: 100%;
+	width: 100%;
+	transform: translateX(-50%);
+	z-index: -1;
 }
 
 
