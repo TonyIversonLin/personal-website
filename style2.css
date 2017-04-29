@@ -5,6 +5,7 @@ html,body {
 	font-family: 'Roboto', sans-serif;
 	position: relative;
 	background-color: white;
+	box-shadow: border-box;
 }
 a:hover {
 	cursor: pointer;
@@ -13,6 +14,12 @@ a:hover {
 
 h1 {
 	text-align: center;
+}
+
+.center {
+	margin: 0 auto;
+	text-align: center;
+	float: none;
 }
 
 .container, .row, ul {
@@ -38,6 +45,7 @@ nav {
 	position: relative;
 }nav a:hover {
 	color: rgb(64, 234, 214);
+	//color: #48E6BC;
 }#logo {
 	float: left;
 	padding-left: 5rem; 
@@ -123,24 +131,32 @@ div.landing > i {
 	cursor: pointer;
 }div.landing h1 {
 	font-weight: lighter;
+	opacity: 0;
+	animation: enlarge-in 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
 }
 
 @keyframes pulse {
-  from {
-    transform: translateY(0%);
-  }
-
-  50% {
-		transform: translateY(-25%);
-  }
-
-  to {
-		transform: translateY(0%);
-  }
+  from { transform: translateY(0%);}
+  50% { transform: translateY(-25%);}
+  to { transform: translateY(0%);}
 }
+
+@keyframes enlarge-in {
+	from {transform: scale(3,3); opacity: 0}
+	to {transform: scale(1,1); opacity: 1}
+}
+
+
+
+
+
+
 
 div.about {
 	text-align: center;
+	margin-top: 8rem;
 }div.about ul {
 	list-style: none;
 }div.about ul li {
@@ -149,6 +165,110 @@ div.about {
 	width: 7rem;
 	margin: 0 3rem;
 }#personal-img {
-	width: 14rem;
+	width: 20rem;
 	border-radius: 50%;
+	filter: saturate(100%);
+}div.about p {
+	font-size: 1.8rem;
+	margin-top: 5rem;
+	opacity: 0.8;
+}div.about h1 {
+	position: relative;
+	font-weight: lighter;
+	font-style: italic;
+	color: #2C3F61;
+}div.about h1:before {
+	content: '';
+	width: 100px;
+	height: 2px;
+	background: linear-gradient(to left, #3e4a54, rgba(255, 255, 255, 0));;
+	position: absolute;
+	top:50%;
+	transform: translateX(-120%);
+}div.about h1:after {
+	content: '';
+	width: 100px;
+	height: 2px;
+	background: linear-gradient(to right, #3e4a54, rgba(255, 255, 255, 0));
+	position: absolute;
+	top:50%;
+	transform: translateX(22%);
+}div.about .skills {
+	background-color: #F1F4F9;
+	padding: 7rem 0;
+	background: linear-gradient(
+                     rgba(20,20,20, 0.7), 
+                     rgba(20,20,20, 0.7)),
+                     url('./practice/resource/landing2.jpg');
+	background-size: cover;
+	background-position: center;
+	color: white;
+	background-attachment: fixed;
+}.skills div div div {
+	text-align: left;
+	text-indent: 2rem;
+	font-size: 1.6rem;
+}
+
+
+
+.bar {
+	width: 90%;
+	height: 0.5rem;
+	background-color: rgba(0, 0, 0, 0.5);
+	margin: 0 auto;
+	margin-bottom: 2rem;
+
+}.progress {
+	height: 100%;
+	background: linear-gradient(to right, #a871bf, #37E5D6);
+	//background: linear-gradient(to right, #37B9E9, #1BBCB1);
+	background: linear-gradient(to right, #0166AD, #4CF1C5);
+}.progress.javascript {
+	width: 90%;
+}.progress.html5-css3{
+	width: 85%;
+}.progress.react{
+	width: 90%;
+}.progress.angular {
+	width: 70%;
+}.progress.nodejs {
+	width: 80%;
+}.progress.postgres {
+	width: 80%;
+}.progress.jquery {
+	width: 70%
+}.progress.ajax {
+	width: 70%;
+}.progress.mocha {
+	width: 55%;
+}.progress.socket {
+	width: 60%;
+}.progress.ux-ui{
+	width: 75%;
+}.progress.ps {
+	width: 65%;
+}
+
+
+
+
+
+
+footer {
+	padding: 3rem 0;
+	background-color: #101010;
+	color: rgba(255, 255, 255, 0.5);
+}.copyright {
+	float: left;
+}footer .social-link {
+	float: right;
+}footer .social-link a {
+	color: grey;
+	margin-right: 3rem;
+}footer .social-link a:hover {
+	color: #48E6BC;
+}footer p {
+	transform: translateY(-50%);
+	margin-left: 3rem;
 }
