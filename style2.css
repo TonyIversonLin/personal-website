@@ -120,8 +120,7 @@ div.landing {
 }div.landing p:first-of-type {
 	font-size: 1.5rem;
 	opacity: 0.8;
-}
-div.landing > i {
+}div.landing > i {
 	position: absolute;
 	bottom: 3rem;
 	color: white;
@@ -135,6 +134,12 @@ div.landing > i {
 	animation: enlarge-in 1s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
+}div.landing div.content p {
+	opacity: 0;
+	transform: translateY(300%);
+	animation: fade-in-top 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards; 
 }
 
 @keyframes pulse {
@@ -146,6 +151,11 @@ div.landing > i {
 @keyframes enlarge-in {
 	from {transform: scale(3,3); opacity: 0}
 	to {transform: scale(1,1); opacity: 1}
+}
+
+@keyframes fade-in-top {
+	from {transform: translateY(300%); opacity: 0;}
+	to {transform: translateY(0%); opacity: 1;}
 }
 
 
@@ -225,29 +235,114 @@ div.about {
 	//background: linear-gradient(to right, #37B9E9, #1BBCB1);
 	background: linear-gradient(to right, #0166AD, #4CF1C5);
 }.progress.javascript {
-	width: 90%;
+	width: 0%;
+	animation: javascript-bar 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards; 
+	animation-delay: 2s;
 }.progress.html5-css3{
-	width: 85%;
+	width: 0%;
+	animation: html5-css3-bar 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards; 
+	animation-delay: 2s;
 }.progress.react{
-	width: 90%;
+	width: 0%;
+	animation: react-bar 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards; 
+	animation-delay: 2.2s;
 }.progress.angular {
-	width: 70%;
+		width: 0%;
+	animation: angular-bar 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards; 
+	animation-delay: 2.2s;
 }.progress.nodejs {
-	width: 80%;
+		width: 0%;
+	animation: nodejs-bar 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards; 
+	animation-delay: 2.4s;
 }.progress.postgres {
-	width: 80%;
+		width: 0%;
+	animation: postgres-bar 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards; 
+	animation-delay: 2.4s;
 }.progress.jquery {
-	width: 70%
+	width: 0%;
+	animation: jquery-bar 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards; 
+	animation-delay: 2.6s;
 }.progress.ajax {
-	width: 70%;
+		width: 0%;
+	animation: ajax-bar 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards; 
+	animation-delay: 2.6s;
 }.progress.mocha {
-	width: 55%;
+		width: 0%;
+	animation: mocha-bar 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards; 
+	animation-delay: 2.8s;
 }.progress.socket {
-	width: 60%;
+		width: 0%;
+	animation: socket-bar 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards; 
+	animation-delay: 2.8s;
 }.progress.ux-ui{
-	width: 75%;
+		width: 0%;
+	animation: ux-ui-bar 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards; 
+	animation-delay: 3s;
 }.progress.ps {
-	width: 65%;
+		width: 0%;
+	animation: ps-bar 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards; 
+	animation-delay: 3s;
+}
+
+@keyframes javascript-bar {
+	from {width: 0} to {width: 90%}
+}
+@keyframes html5-css3-bar{
+	from {width: 0} to {width: 85%}
+}
+@keyframes react-bar{
+	from {width: 0} to {width: 90%}
+}
+@keyframes angular-bar{
+	from {width: 0} to {width: 70%}
+}
+@keyframes nodejs-bar{
+	from {width: 0} to {width: 80%}
+}
+@keyframes postgres-bar{
+	from {width: 0} to {width: 80%}
+}
+@keyframes jquery-bar{
+	from {width: 0} to {width: 70%}
+}
+@keyframes ajax-bar{
+	from {width: 0} to {width: 70%}
+}
+@keyframes mocha-bar{
+	from {width: 0} to {width: 55%}
+}
+@keyframes socket-bar{
+	from {width: 0} to {width: 60%}
+}
+@keyframes ux-ui-bar{
+	from {width: 0} to {width: 75%}
+}
+@keyframes ps-bar{
+	from {width: 0} to {width: 65%}
 }
 
 
