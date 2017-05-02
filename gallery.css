@@ -1,0 +1,33 @@
+// nav {
+// 	background-color: rgba(0, 0, 0, 0.8);
+// }
+
+body {
+	background: linear-gradient(
+                     rgba(20,20,20, 0.4), 
+                     RGBA(127, 132, 132, 1.00)),
+                     url('./practice/resource/gallery-intro.jpg');
+  background-size: contain;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-color: rgba(140, 140, 140, 0.37);;
+	filter: contrast(130%); 
+	height: initial;
+	min-height: 100%;    
+}
+
+header {
+	height: 100%;
+	text-align: center;
+	color: white;
+	padding-top: 20rem;
+	// background: linear-gradient(
+ //                     rgba(20,20,20, 0.4), 
+ //                     rgba(20,20,20, 0.4)),
+ //                     url('./practice/resource/gallery-intro.jpg');
+	// background-size: cover;
+	// background-position: center;
+	// color: white;
+	// background-attachment: fixed;
+	// filter: contrast(130%);
+}
