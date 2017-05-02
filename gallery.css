@@ -2,16 +2,30 @@
 // 	background-color: rgba(0, 0, 0, 0.8);
 // }
 
+// body {
+// 	background: linear-gradient(
+//                      rgba(20,20,20, 0.3), 
+//                      rgba(127, 132, 132, 0.5)),
+//                      url('./practice/resource/gallery-intro.jpg');
+//   background-size: contain;
+// 	background-position: center top;
+// 	background-repeat: no-repeat;
+// 	background-color: rgba(140, 140, 140, 0.37);
+// 	//filter: contrast(130%); 
+// 	height: initial;
+// 	min-height: 100%;    
+// }
+
 body {
 	background: linear-gradient(
-                     rgba(20,20,20, 0.4), 
-                     RGBA(127, 132, 132, 1.00)),
+                     rgba(20,20,20, 0.3) 5%, 
+                     rgba(0, 0, 0, 1)),
                      url('./practice/resource/gallery-intro.jpg');
   background-size: contain;
 	background-position: center top;
 	background-repeat: no-repeat;
-	background-color: rgba(140, 140, 140, 0.37);;
-	filter: contrast(130%); 
+	background-color: rgba(140, 140, 140, 0.37);
+	//filter: contrast(130%); 
 	height: initial;
 	min-height: 100%;    
 }
@@ -20,7 +34,7 @@ header {
 	height: 100%;
 	text-align: center;
 	color: white;
-	padding-top: 20rem;
+	padding: 16rem 0;
 	// background: linear-gradient(
  //                     rgba(20,20,20, 0.4), 
  //                     rgba(20,20,20, 0.4)),
@@ -30,4 +44,57 @@ header {
 	// color: white;
 	// background-attachment: fixed;
 	// filter: contrast(130%);
+}
+
+#filter ul {
+	text-align: center;
+	list-style: none;
+	margin-bottom: 3rem;
+	word-spacing: 2rem;
+
+}#filter ul li {
+	font-size: 1.6rem;
+	color: white;
+	display: inline;
+	opacity: 0.9;
+}
+
+hr {
+	width: 90%;
+	opacity: 0.6;
+}
+#gallery {
+	margin: 0 auto;
+	width: 90%;
+
+	column-width: 320px;
+	-webkit-column-width: 320px;
+	-moz-column-width: 320px;
+	
+	column-count: 3;
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+}.image {
+	margin-bottom: 1.8rem;
+	display: inline-block;
+	background: black;
+}#gallery:hover .image img:not(:hover) {
+	opacity: 0.5;
+	//filter: brightness(50%);
+}
+
+img {
+	// width:100%;
+	// height: auto;
+	background-color: white;
+	padding: 1rem;
+	width: 100%;
+	box-shadow: 2px 2px 20px black;
+}
+
+@media (max-width: 738px) {
+	body {
+		background-size: cover;
+		background-position: 20%;
+	}
 }
