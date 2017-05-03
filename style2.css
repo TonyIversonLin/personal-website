@@ -121,7 +121,7 @@ div.about {
 	background: linear-gradient(
                      rgba(20,20,20, 0.7), 
                      rgba(20,20,20, 0.7)),
-                     url('./practice/resource/landing2.jpg');
+                     url('./practice/resource/skill.jpg');
 	background-size: cover;
 	background-position: center;
 	color: white;
@@ -130,6 +130,11 @@ div.about {
 	text-align: left;
 	text-indent: 2rem;
 	font-size: 1.6rem;
+}.skills .row div span{
+	letter-spacing: 0.1rem;
+	font-weight: lighter;
+	font-style: italic;
+	opacity: 0.9;
 }
 
 
@@ -257,3 +262,4 @@ div.about {
 @keyframes ps-bar{
 	from {width: 0} to {width: 65%}
 }
+

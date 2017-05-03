@@ -46,6 +46,7 @@ header {
 	// filter: contrast(130%);
 }header h1 {
 	opacity: 0;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 4.5rem;
 	font-weight: lighter;
 	animation: small-in 1s;
