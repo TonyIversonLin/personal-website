@@ -1,165 +1,152 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
-	<title>Tony Lin | Portfolios</title>
-	<meta charset="utf-8">  <!-- let the browser know the text content format -->
-	<link rel='icon' type='image/png' href='practice/resource/logo.png'>
-
-	<!-- this will be search and shown by social network like facebook and twitter -->
-	<meta property='og:title' content="Tony's amazing website">
-	<meta property='og:image' content="../practice/resource/background1">
-	<meta property='og:description' content="This is Tony's landing page">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400,700" rel="stylesheet">
+	<title>Tony Lin Personal site</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="style.css">
-
+	<script src="https://use.fontawesome.com/821afdbeaf.js"></script>
+	<link rel="stylesheet" type="text/css" href="basic.css">
+	<link rel="stylesheet" type="text/css" href="style2.css">
 </head>
+<body onscroll='activateAnimation()'>
+	<nav>
+		<ul>
+			<li id='logo'><span>Tony Lin</span></li>
+			<li class="nav-link"><a href="contact.html">Contact</a></li>
+			<li class="nav-link"><a href="gallery.html">Gallery</a></li>
+			<li class="nav-link"><a href="resume.html">Experience</a></li>
+			<li class="nav-link"><a href="portfolio.html">Portfolio</a></li>
+			<li class="nav-link"><a style="opacity: 1; color: white" href="index.html">About</a></li>
+		</ul>
+	</nav>
 
-<body>
+	<div class="container landing" id='home'>
+		<div class="content">
+			<h1>Hi, I am Tony Lin</h1>
+			<p>Web Developer &nbsp |  &nbsp  UX/UI Designer  &nbsp|  &nbsp  Sketcher &nbsp | &nbsp  Traveler </p>
+			<p class="social-link">
+				<a href="https://www.linkedin.com/in/yechao-lin-267029a1"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+				<a href="https://github.com/TonyIversonLin"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+				<a href="https://www.facebook.com/yechao.lin"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+				<a href="https://www.youtube.com/channel/UCRWuxafk4SuxouAvT5us1xQ"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a>
+				<a href="https://twitter.com/LINYECHAO"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+			</p><br><br><br>
+			<!-- <button>Learn More</button> -->
+		</div>
+		<i class="fa fa-angle-double-down fa-4x" aria-hidden="true"></i>
+	</div>
 
-	<header>
-		<div class='container-fluid'>
-			<div class='row'><div class='col-xs-12 '><h1>Welcome</h1></div></div>
-			<div class='row'>
-				<div class='col-xs-12 col-sm-6 col-center-block'>
-					<p>My name is Yechao Lin (Tony). I am a software engineer, a web developer who specialize in fullstack javascript with Node.js, have extensive knowledge in ReactJS/Redux, AngularJS. I enjoy building rich interactive web app and currently seeking for web developer role.</p>
-					<img class='person' src='practice/resource/personal3.png'>
-				</div>
+	<div class="container about" id='about'>
+		<h1>ABOUT ME</h1><br><br>
+		<div class="row">
+			<ul>
+				<li><img src="./practice/resource/website.svg"></li>
+				<li><img src="./practice/resource/engineer.svg"></li>
+				<li><img id="personal-img" src="./practice/resource/personal3.png"></li>
+				<li><img src="./practice/resource/painter.svg"></li>
+				<li><img src="./practice/resource/sketch.svg"></li>
+			</ul>
+			<div class="col-md-6 center">
+				<p>My name is Yechao Lin (Tony). I am a software engineer, 
+					a web developer who specialize in fullstack javascript with Node.js, 
+					have extensive knowledge in web development framework like ReactJS/Redux, AngularJS. 
+					I have great experience on building rich interactive web app and currently seeking for web developer role.<br><br>
+					I am also passionated in UX/UI design that center design principle and decision base on 
+					user needs and business goals.
+					I enjoying singing, love painting and sketching during free time which help to keep my 
+					artistic sense sharp and to stay detail oriented for design.
+				</p>
+				<br><br>
 			</div>
 		</div>
-	</header>
-
-	<div class='project'>
-		<h2>Recent Projects</h2><br><br>
-		<div class='container-fluid'>
-			<div class='row'>
-				<div class='col-xs-12 col-sm-10 col-md-8 col-center-block'>
-					<div class='col-sm-6 col-xs-12'>
-						<img src="practice/resource/music-player-1.png" class='img-thumbnail work-demo'>
-						<img src="practice/resource/music-player-2.png" class='img-thumbnail work-demo'>
+		<br><br>
+		<div class='row skills' >
+			<h1 style="color: white">MY SKILLS</h1>
+			<br>
+			<div class="col-md-6 center">
+				<div class='row'>
+					<div class="col-sm-6 col-xs-12"><span>Javascript</span>
+						<div class="bar"><div class="progress javascript"></div></div>
 					</div>
-
-					<div class='col-sm-6 col-xs-12'>
-						<h3><span>T</span>ony's <span>W</span>ebplayer</h3>
-						<p>This is a simple online music player for your relax time. The front end of the app is initially built with angular. I took it apart and reconstruct with React/Redux. You can enjoy those free relax music while you exploring the app. You can also create your personal playlist and use drag and drop to sort your playlist.
-						</p><br>
-
-						<h4><span>U</span>pcoming <span>F</span>eature</h4>
-						<p>Audio Mixer | Music Visualizer | Cilent Music upload </p><br>
-
-						<h4><span>T</span>echnology <span>U</span>sed</h4>
-						<p> <span>ReactJS/Redux</span><span>Web Audio API</span><span>Bootstrap</span><span>Node.js</span><span>Express.js</span><span>Sequelize</span><span>RESTful API server</span><span>AJAX</span></p><br>
-
-						<a href="https://github.com/TonyIversonLin/juke-react">Github &nbsp;<img class="icon" src="../practice/resource/git.png"></a> | <a href="https://tony-webplayer.herokuapp.com/">Website &nbsp;<img class="icon" src="../practice/resource/music1.png"></a>
-
+					<div class="col-sm-6 col-xs-12"><span>HTML5/CSS3</span>
+						<div class="bar"><div class="progress html5-css3" data-progress='85%'></div></div>
 					</div>
 				</div>
 
+				<div class='row'>
+					<div class="col-sm-6 col-xs-12"><span>ReactJS/ReduxJS</span>
+						<div class="bar"><div class="progress react"></div></div>
+					</div>
+					<div class="col-sm-6 col-xs-12"><span>AngularJS</span>
+						<div class="bar"><div class="progress angular"></div></div>
+					</div>
+				</div>
+
+				<div class='row'>
+					<div class="col-sm-6 col-xs-12"><span>NodeJS</span>
+						<div class="bar"><div class="progress nodejs"></div></div>
+					</div>
+					<div class="col-sm-6 col-xs-12"><span>PostgresSQL</span>
+						<div class="bar"><div class="progress postgres"></div></div>
+					</div>
+				</div>
+
+				<div class='row'>
+					<div class="col-sm-6 col-xs-12"><span>JQuery</span>
+						<div class="bar"><div class="progress jquery"></div></div>
+					</div>
+					<div class="col-sm-6 col-xs-12"><span>AJAX</span>
+						<div class="bar"><div class="progress ajax"></div></div>
+					</div>
+				</div>
+
+				<div class='row'>
+					<div class="col-sm-6 col-xs-12"><span>Mocha/Chai/Jasmine</span>
+						<div class="bar"><div class="progress mocha"></div></div>
+					</div>
+					<div class="col-sm-6 col-xs-12"><span>Socket.io</span>
+						<div class="bar"><div class="progress socket"></div></div>
+					</div>
+				</div>
+
+				<div class='row'>
+					<div class="col-sm-6 col-xs-12"><span>UX/UI</span>
+						<div class="bar"><div class="progress ux-ui"></div></div>
+					</div>
+					<div class="col-sm-6 col-xs-12"><span>Photoshop/Illustrator</span>
+						<div class="bar"><div class="progress ps"></div></div>
+					</div>
+				</div>
 			</div>
-			<hr>
 		</div>
 	</div>
 
-	<div class='project'>
-		<div class='container-fluid'>
-			<div class='row'>
-				<div class='col-xs-12 col-sm-10 col-center-block'>
+	<footer class="clearfix">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-xs-12">
+					<p class="copyright center">&copy 2017 Tony Lin. All rights reserve</p>
+				</div>
 
-					<div class='col-xs-12' style='margin-bottom: 50px'>
-						<div class='col-sm-4 col-xs-12'><img src="practice/resource/sage-5.png" class='img-thumbnail work-demo'></div>
-						<div class='col-sm-4 col-xs-12'><img src="practice/resource/sage-1.png" class='img-thumbnail work-demo'></div>
-						<div class='col-sm-4 col-xs-12'><img src="practice/resource/sage-2.png" class='img-thumbnail work-demo'></div>
-						<div class='col-sm-4 col-xs-12'><img src="practice/resource/sage-3.png" class='img-thumbnail work-demo'></div>
-						<div class='col-sm-4 col-xs-12'><img src="practice/resource/sage-4.png" class='img-thumbnail work-demo'></div>
-						<div class='col-sm-4 col-xs-12'>
-							<div class='embed-responsive embed-responsive-16by9 iframe-position'>
-								<iframe src="https://www.youtube.com/embed/KNxxkKwGU7g" frameborder="0" allowfullscreen></iframe>
-							</div>
-						</div>
-					</div>
-					<div class='col-xs-12 col-sm-8 col-center-block'>
-						<h3><span>S</span>age</h3>
-						<p>This is personal financial managent app that can keep track on your transaction, budget, financial goal. The unique feature this app is that client can download the whole app and install it on their personal Raspberry Pi. It means that client is able to host their own server that offer free basic financial management service without worrying the third party(or middleman) stealing personal financial data and interruption of embedded advertisements. In addition, the app can auto-categorize your future transaction based on client's existing transaction by using smart matching algorithm. All the personal data is safely protected because the app is guarded by very reliable encryption strategy. Even if the Raspberry Pi is stolen, client banking information won't be stolen since those data will be encrypted by client password in the first place.  </p><br>
-
-						<h4><span>T</span>echnology <span>U</span>sed</h4>
-						<p><span>ReactJS/Redux</span><span>Banking.js</span><span>Victory.js</span><span>React-Bootstrap</span><span>Node.js</span><span>Express.js</span><span>Sequelize</span><span>PostgreSQL</span><span>AJAX</span></p><br>
-						<a href="https://github.com/my-sage/sage">Github &nbsp;<img class="icon" src="../practice/resource/git.png"></a> | <a href="https://my-sage.herokuapp.com/">Website&nbsp;<img class="icon" src="../practice/resource/financial.png"></a>
-					</div>
+				<div class="col-md-4 col-xs-12">
+					<p class="copyright center">
+						<i class="fa fa-envelope" aria-hidden="true"></i>:&nbsp;&nbsp;tonyiversonlin@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;
+						<i class="fa fa-phone" aria-hidden="true"></i>:&nbsp;&nbsp;347-475-4778
+					</p>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<p class="social-link center">
+						<a href="https://www.linkedin.com/in/yechao-lin-267029a1"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
+						<a href="https://github.com/TonyIversonLin"><i class="fa fa-github-square fa-lg" aria-hidden="true"></i></a>
+						<a href="https://www.facebook.com/yechao.lin"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a>
+						<a href="https://www.youtube.com/channel/UCRWuxafk4SuxouAvT5us1xQ"><i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i></a>
+						<a href="https://twitter.com/LINYECHAO"><i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i></a>
+					</p>
 				</div>
 			</div>
-			<hr>
 		</div>
-	</div>
-
-	<div class='project'>
-		<div class='container-fluid'>
-			<div class='row'>
-				<div class='col-xs-12 col-sm-10 col-md-8 col-center-block'>
-
-					<div class='col-sm-6 col-xs-12'>
-						<img src="practice/resource/store-1.png" class='img-thumbnail work-demo'>
-						<img src="practice/resource/store-2.png" class='img-thumbnail work-demo'>
-					</div>
-
-					<div class='col-sm-6 col-xs-12'>
-						<h3><span>H</span>ipster <span>S</span>tore</h3>
-						<p>A basic E-commercial store demo app that sell popular hispter product "Tote Bag". The client can explore the tote bags available in the store, add their item into the cart, leave product review and rating, and sign in or login with client's facebook, google, twitter account. </p><br>
-
-						<h4><span>T</span>echnology <span>U</span>sed</h4>
-						<p><span>AngularJS</span><span>Wing.css</span><span>Node.js</span><span>Express.js</span><span>OAuth</span><span>Passport.js</span><span>Sequelize</span><span>PostgreSQL</span><span>RESTful API server</span><span>AJAX</span></p><br>
-						<a href="https://github.com/pbaize/stackstore">Github &nbsp;<img class="icon" src="../practice/resource/git.png"></a> | <a href="https://frozen-escarpment-21452.herokuapp.com">Website&nbsp;<img class="icon" src="../practice/resource/store.png"></a>
-					</div>
-
-				</div>
-			</div>
-			<hr>
-		</div>
-	</div>
-
-	<div class='project'>
-		<div class='container-fluid'>
-			<div class='row'>
-				<div class='col-xs-12 col-sm-10 col-md-8 col-center-block'>
-
-					<div class='col-sm-6 col-xs-12'>
-						<img src="practice/resource/menu-1.png" class='img-thumbnail work-demo'>
-					</div>
-
-					<div class='col-sm-6 col-xs-12'>
-						<h3><span>F</span>ullstacker <span>M</span>enu</h3>
-						<p>A very convenient food image sharing app that help you explore awesome food source around your work place</p><br>
-
-						<h4><span>T</span>echnology <span>U</span>sed</h4>
-						<p><span>Geolocation</span><span>Google Map API</span><span>Google Direction API</span><span>AngularJS</span></p><br>
-						<a href="https://github.com/TonyIversonLin/stackathon">Github &nbsp;<img class="icon" src="../practice/resource/git.png"></a> | <a href="https://fullstacker-menu.herokuapp.com/" onclick="return false" id='disable'><span>Website&nbsp;</span><img class="icon" src="../practice/resource/food.png"></a>
-					</div>
-
-				</div>
-			</div>
-			<hr>
-		</div>
-	</div>
-
-	<footer>
-
-		<div>
-			<h2>Contact</h2>
-			<p>Phone: (347)-475-4778</p>
-			<p>Email: tonyiversonlin@gmail.com</p>
-		</div>
-
-		<div>
-			<a href="https://github.com/TonyIversonLin"><img class="social" src="../practice/resource/github.png"></a>
-			<a href="https://www.linkedin.com/in/yechao-lin-267029a1"><img class="social" src="../practice/resource/linkedin.png"></a> 
-			<a href="https://www.facebook.com/yechao.lin"><img class="social" src="../practice/resource/facebook.png"></a> 
-			<a href="https://www.youtube.com/channel/UCRWuxafk4SuxouAvT5us1xQ"><img class="social" src="../practice/resource/youtube.png"></a> 
-			<a href="https://twitter.com/LINYECHAO"><img class="social" src="../practice/resource/twitter.png"></a>
-		</div>
-
 	</footer>
 
-</body>
+	<script type="text/javascript" src="utility.js"></script>
 
+</body>
 </html>

@@ -120,3 +120,7 @@ footer {
 	margin-left: 3rem;
 	margin-bottom: 1rem !important;
 }
+
+body > div:last-child {
+	height: 0% !important;
+}
