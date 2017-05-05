@@ -53,6 +53,7 @@ header h1 ,header h5 {
 	box-shadow: 4px 4px 7px 0px grey;
 	margin: 2rem auto;
 	margin-bottom: 4rem;
+
 }#experience i {
 	padding: 1rem;
 	position: absolute;
@@ -101,5 +102,87 @@ header h1 ,header h5 {
 	transform: translateX(-50%);
 	z-index: -1;
 }
+
+#experience canvas, #experience #centerline, #experience i {
+	opacity: 0;
+	animation: fade-in 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+#touro .right {
+	opacity: 0;
+	animation: fade-in-left 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	animation-delay: 1.2s;
+}#touro .left {
+	opacity: 0;
+	animation: fade-in-right 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	animation-delay: 1.2s;
+}
+
+#fullstack .right {
+	opacity: 0;
+	animation: fade-in-left 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	animation-delay: 1.6s;
+}#fullstack .left {
+	opacity: 0;
+	animation: fade-in-right 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	animation-delay: 1.6s;
+}
+
+#consulting .right {
+	opacity: 0;
+	animation: fade-in-left 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	animation-delay: 2.0s;
+}#consulting .left {
+	opacity: 0;
+	animation: fade-in-right 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	animation-delay: 2.0s;
+}
+
+#research .right {
+	opacity: 0;
+	animation: fade-in-left 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	animation-delay: 2.4s;
+}#research .left {
+	opacity: 0;
+	animation: fade-in-right 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	animation-delay: 2.4s;
+}
+
+
+
+@keyframes fade-in {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframes fade-in-left {
+	from {opacity: 0; transform: translateX(-30%);}
+	to {opacity: 1; transform: translateX(0%);}
+}
+
+@keyframes fade-in-right {
+	from {opacity: 0; transform: translateX(30%);}
+	to {opacity: 1; transform: translateX(0%);}
+}
+
 
 
