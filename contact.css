@@ -3,7 +3,14 @@ nav {
 	background-color: initial;
 } nav a {
 	color: black;
-} #logo {
+} nav a:hover {
+	color: black;
+	opacity: 1;
+} nav ul li a:before {
+	background-color: black;
+}
+
+#logo {
 	color: black;
 }
 
