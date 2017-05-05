@@ -85,19 +85,18 @@ nav {
 
 
 footer {
-	padding: 3rem 0;
+	padding: 3rem 0 1rem 0;
 	background-color: #101010;
 	color: rgba(255, 255, 255, 0.5);
-}.copyright {
-	float: left;
-}footer .social-link {
-	float: right;
 }footer .social-link a {
 	color: grey;
 	margin-right: 3rem;
+}footer .social-link a:last-child {
+	margin-right: 0;
 }footer .social-link a:hover {
 	color: #48E6BC;
 }footer p {
 	transform: translateY(-50%);
 	margin-left: 3rem;
+	margin-bottom: 1rem !important;
 }
