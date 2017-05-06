@@ -30,5 +30,22 @@ function animationSetup (arrayOfElementID) {
 	}
 }
 
+function jump(event) {
+	let destinationID = event.target.dataset.target;
+	let destinationElement = document.querySelector(destinationID);
+	smoothScroll(destinationElement, 300);
+}
 
+function smoothScroll(to, duration) {
+	if(duration <= 0) return;
+	let difference = to.offsetTop- 150 - body.scrollTop;
+	console.log('difference', difference);
+	let step = difference / duration * 10;
+
+	setTimeout(() => {
+		body.scrollTop = body.scrollTop + step;
+		if(body.scrollTop === to.offsetTop) return;
+		smoothScroll(to, duration - 10);
+	}, 10)
+}
 

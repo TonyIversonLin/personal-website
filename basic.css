@@ -1,5 +1,17 @@
+@media only screen and (max-width: 412px) {
+	html, body {
+		height: 90%;
+	}
+}
+
+@media only screen and (min-width: 413px) {
+	html, body {
+		height: 100%;
+	}
+}
+
+
 html,body { 
-	height:100%; 
 	width: 100%;
 	padding: 0.1px;
 	box-sizing: border-box;

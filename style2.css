@@ -1,3 +1,23 @@
+@media only screen and (max-width: 412px) {
+	div.landing div.content h1 {
+	font-size: 4rem;
+	}
+	div.landing p:first-of-type {
+		font-size: 1.2rem;
+	}
+}
+
+@media only screen and (min-width: 413px) {
+	div.landing div.content h1 {
+	font-size: 7rem;
+	}
+	div.landing p:first-of-type {
+		font-size: 1.5rem;
+	}
+}
+
+
+
 div.landing {
 	height: 100%;
 	width: 100%;
@@ -14,7 +34,7 @@ div.landing {
 	top: 50%;
 	transform: translateY(-50%);
 }div.landing div.content h1 {
-	font-size: 7rem;
+	//font-size: 7rem;
 	transform:translate3d(0,0,0);
 }div.landing div.content p.social-link {
 	margin-top: 2rem;
@@ -30,7 +50,7 @@ div.landing {
 }div.landing h1, div.landing p {
 	text-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3);
 }div.landing p:first-of-type {
-	font-size: 1.5rem;
+	//font-size: 1.5rem;
 	opacity: 0.8;
 }div.landing > i {
 	position: absolute;
@@ -72,7 +92,12 @@ div.landing {
 
 
 
-
+@media only screen and (max-width: 800px) {
+	#about ul li:nth-of-type(2), #about ul li:nth-of-type(1), #about ul li:nth-of-type(4),
+	#about ul li:nth-of-type(5) {
+		display: none;
+	}
+}
 
 
 
@@ -88,6 +113,11 @@ div.about {
 	margin: 0 3rem;
 	opacity: 0;
 }
+
+// #about ul li:nth-of-type(2), #about ul li:nth-of-type(1), #about ul li:nth-of-type(4),
+// 	#about ul li:nth-of-type(5) {
+// 		display: none;
+// 	}
 
 #about.active ul li:nth-of-type(2) img {
 	animation: fade-in-left-small 1s;
@@ -119,6 +149,7 @@ div.about {
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-in-out;
 }
+
 
 
 
