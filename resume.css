@@ -184,5 +184,9 @@ header h1 ,header h5 {
 	to {opacity: 1; transform: translateX(0%);}
 }
 
+@media only screen and (max-width: 995px) {
+	canvas, #centerline, #experience i {display: none !important}
+	
+}
 
 

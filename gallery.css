@@ -27,7 +27,7 @@ body {
 	background-color: rgba(140, 140, 140, 0.37);
 	//filter: contrast(130%); 
 	height: initial;
-	//min-height: 100%;    
+	min-height: 100%;    
 }
 
 header {
@@ -117,6 +117,9 @@ hr {
 	body {
 		background-size: cover;
 		background-position: 20%;
+	}
+	header h1 {
+		font-size: 3.5rem;
 	}
 }
 
