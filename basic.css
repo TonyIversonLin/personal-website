@@ -119,6 +119,8 @@ footer {
 	transform: translateY(-50%);
 	margin-left: 3rem;
 	margin-bottom: 1rem !important;
+	font-weight: initial;
+	color: rgba(255, 255, 255, 0.5);
 }
 
 body > div:last-child {
