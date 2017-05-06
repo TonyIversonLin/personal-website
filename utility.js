@@ -2,33 +2,33 @@ let body = document.body;
 let height = window.innerHeight
 							|| document.documentElement.clientHeight
 							|| document.body.clientHeight;
-let activationStatus = {
-	nav: true,
-	about: true,
-	skill: true
-}
 
+let navigationStatus = true;
+let activationStatus = {};
 let navElement = document.querySelector('nav');
-let aboutElement = document.querySelector('#about');
-let skillElement = document.querySelector('#skill')
-let aboutActivationLocation = aboutElement.offsetTop - (3/5) * height;
-let skillActivationLocation = skillElement.offsetTop - (3/5) * height;
 
+function animationSetup (arrayOfElementID) {
+	let arrayElement = arrayOfElementID.map( elementID => {
+		activationStatus[elementID] = true;
+		return document.querySelector(elementID)
+	});
+	let ElementActivationLocation = arrayElement.map( element => element.offsetTop - (3/5) * height);
 
-function activateAnimation() {
-	console.log('start scrolling');
-	let currentLocation = body.scrollTop;
-	if(activationStatus.nav){
-		navElement.className += ' on-scroll';
-		activationStatus.nav = false;
-	}
-	if(activationStatus.about && currentLocation >= aboutActivationLocation) {
-		aboutElement.className += ' active';
-		activationStatus.about = false;
-	}
-	if(activationStatus.skill && currentLocation >= skillActivationLocation) {
-		skillElement.className += ' active';
-		activationStatus.skill = false;
+	return function activation() {
+		let currentLocation = body.scrollTop;
+		if(navigationStatus){
+			navElement.className += ' on-scroll';
+			navigationStatus = false;
+		}
+		let length = arrayOfElementID.length;
+		for(let i=0; i<length; i++) {
+			if(activationStatus[arrayOfElementID[i]] && currentLocation >= ElementActivationLocation[i]){
+				arrayElement[i].className += ' active';
+				activationStatus[arrayOfElementID[i]] = false;
+			}
+		}
 	}
 }
+
+
 

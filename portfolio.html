@@ -48,18 +48,17 @@
 		<h5>My Selected Work</h5>
 	</header>
 
-
-	<div class='project'>
-		<h2>Recent Projects</h2><br><br>
+	<div class='project' id="audio">
 		<div class='container-fluid'>
 			<div class='row'>
 				<div class='col-xs-12 col-sm-10 col-md-8 col-center-block'>
-					<div class='col-sm-6 col-xs-12'>
+
+					<div class='col-sm-6 col-xs-12 screenshot'>
 						<img src="practice/resource/music-player-1.png" class='img-thumbnail work-demo'>
 						<img src="practice/resource/music-player-2.png" class='img-thumbnail work-demo'>
 					</div>
 
-					<div class='col-sm-6 col-xs-12'>
+					<div class='col-sm-6 col-xs-12 description'>
 						<h3><span>T</span>ony's <span>W</span>ebplayer</h3>
 						<p>This is a simple online music player for your relax time. The front end of the app is initially built with angular. I took it apart and reconstruct with React/Redux. You can enjoy those free relax music while you exploring the app. You can also create your personal playlist and use drag and drop to sort your playlist.
 						</p><br>
@@ -80,12 +79,12 @@
 		</div>
 	</div>
 
-	<div class='project'>
+	<div class='project' id="sage">
 		<div class='container-fluid'>
 			<div class='row'>
 				<div class='col-xs-12 col-sm-10 col-center-block'>
 
-					<div class='col-xs-12' style='margin-bottom: 50px'>
+					<div class='col-xs-12 screenshot' style='margin-bottom: 50px'>
 						<div class='col-sm-4 col-xs-12'><img src="practice/resource/sage-5.png" class='img-thumbnail work-demo'></div>
 						<div class='col-sm-4 col-xs-12'><img src="practice/resource/sage-1.png" class='img-thumbnail work-demo'></div>
 						<div class='col-sm-4 col-xs-12'><img src="practice/resource/sage-2.png" class='img-thumbnail work-demo'></div>
@@ -97,7 +96,7 @@
 							</div>
 						</div>
 					</div>
-					<div class='col-xs-12 col-sm-8 col-center-block'>
+					<div class='col-xs-12 col-sm-8 col-center-block description'>
 						<h3><span>S</span>age</h3>
 						<p>This is personal financial managent app that can keep track on your transaction, budget, financial goal. The unique feature this app is that client can download the whole app and install it on their personal Raspberry Pi. It means that client is able to host their own server that offer free basic financial management service without worrying the third party(or middleman) stealing personal financial data and interruption of embedded advertisements. <br><br>
 						In addition, the app can auto-categorize your future transaction based on client's existing transaction by using smart matching algorithm. All the personal data is safely protected because the app is guarded by very reliable encryption strategy. Even if the Raspberry Pi is stolen, client banking information won't be stolen since those data will be encrypted by client password in the first place.  </p><br>
@@ -112,17 +111,17 @@
 		</div>
 	</div>
 
-	<div class='project'>
+	<div class='project' id="hispter">
 		<div class='container-fluid'>
 			<div class='row'>
 				<div class='col-xs-12 col-sm-10 col-md-8 col-center-block'>
 
-					<div class='col-sm-6 col-xs-12'>
+					<div class='col-sm-6 col-xs-12 screenshot'>
 						<img src="practice/resource/store-1.png" class='img-thumbnail work-demo'>
 						<img src="practice/resource/store-2.png" class='img-thumbnail work-demo'>
 					</div>
 
-					<div class='col-sm-6 col-xs-12'>
+					<div class='col-sm-6 col-xs-12 description'>
 						<h3><span>H</span>ipster <span>S</span>tore</h3>
 						<p>A basic E-commercial store demo app that sell popular hispter product "Tote Bag". The client can explore the tote bags available in the store, add their item into the cart, leave product review and rating, and sign in or login with client's facebook, google, twitter account. </p><br>
 
@@ -137,16 +136,16 @@
 		</div>
 	</div>
 
-	<div class='project'>
+	<div class='project' id="fullstack">
 		<div class='container-fluid'>
 			<div class='row'>
 				<div class='col-xs-12 col-sm-10 col-md-8 col-center-block'>
 
-					<div class='col-sm-6 col-xs-12'>
+					<div class='col-sm-6 col-xs-12 screenshot'>
 						<img src="practice/resource/menu-1.png" class='img-thumbnail work-demo'>
 					</div>
 
-					<div class='col-sm-6 col-xs-12'>
+					<div class='col-sm-6 col-xs-12 description'>
 						<h3><span>F</span>ullstacker <span>M</span>enu</h3>
 						<p>A very convenient food image sharing app that help you explore awesome food source around your work place</p><br>
 
@@ -205,6 +204,9 @@
 	</footer>
 
 	<script type="text/javascript" src="utility.js"></script>
+	<script type="text/javascript">
+		let activateAnimation = animationSetup(['#sage','#hispter','#fullstack']);
+	</script>
 
 </body>
 

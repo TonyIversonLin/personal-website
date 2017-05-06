@@ -76,7 +76,7 @@ a:hover {
 p {
 	font-weight: lighter;
 	line-height: 26px;
-	color: #868686;
+	color: #545454;
 }
 
 hr {
@@ -183,5 +183,85 @@ div.project:nth-child(even) {
 	padding: 10rem 0;
 	border-top: 1px solid #e7e7e7;
   border-bottom: 1px solid #e7e7e7;
+}
+
+#audio .screenshot, #audio .description{
+	opacity: 0;
+}#audio .screenshot {
+	animation: fade-in-left 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0.5s;
+}#audio .description {
+	animation: fade-in-right 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0.5s;
+}
+
+#sage .screenshot img, #sage .screenshot .iframe-position, #sage .description{
+	opacity: 0;
+}#sage.active .screenshot img, #sage.active .screenshot .iframe-position {
+	animation:  enlarge-in 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}#sage.active .description {
+	animation:  fade-in-top 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+
+#hispter .screenshot, #hispter .description{
+	opacity: 0;
+}#hispter.active .screenshot {
+	animation: fade-in-top 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+}#hispter.active .description {
+	animation: fade-in-bottom 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+}
+
+#fullstack .screenshot, #fullstack .description{
+	opacity: 0;
+}#fullstack.active .screenshot {
+	animation: fade-in-left 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+}#fullstack.active .description {
+	animation: fade-in-right 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+}
+
+
+
+
+@keyframes fade-in-left {
+	from {opacity: 0; transform: translateX(-20%)}
+	to {opacity: 1; transform: translateX(0%)}
+}
+
+@keyframes fade-in-right {
+	from {opacity: 0; transform: translateX(20%)}
+	to {opacity: 1; transform: translateX(0%)}
+}
+
+@keyframes enlarge-in {
+	from {opacity: 0; transform: scale(0,0)}
+	to {opacity: 1;transform: scale(1,1)}
+}
+
+@keyframes fade-in-top {
+	from {opacity: 0; transform: translateY(20%)}
+	to {opacity: 1; transform: translateY(0%)}
+}
+
+@keyframes fade-in-bottom {
+	from {opacity: 0; transform: translateY(-20%)}
+	to {opacity: 1; transform: translateY(0%)}
 }
 

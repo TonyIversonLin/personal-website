@@ -93,29 +93,29 @@ div.about {
 	animation: fade-in-left-small 1s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-in-out;
-	animation-delay: 0.5s;
+	animation-delay: 0.3s;
 }#about.active ul li:nth-of-type(1) img {
 	animation: fade-in-left-big 1s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-in-out;
-	animation-delay: 0.5s;
+	animation-delay: 0.3s;
 }#about.active ul li:nth-of-type(4) img {
 	animation: fade-in-right-small 1s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-in-out;
-	animation-delay: 0.5s;
+	animation-delay: 0.3s;
 }#about.active ul li:nth-of-type(5) img {
 	animation: fade-in-right-big 1s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-in-out;
-	animation-delay: 0.5s;
+	animation-delay: 0.3s;
 }#personal-img {
 	width: 20rem;
 	border-radius: 50%;
 	filter: saturate(100%);
 	opacity: 0;
 }#about.active #personal-img {
-	animation: fade-in-top-small 1s;
+	animation: fade-in-top-small 0.5s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-in-out;
 }
