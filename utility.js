@@ -7,6 +7,9 @@ let navigationStatus = true;
 let activationStatus = {};
 let navElement = document.querySelector('nav');
 
+let menu = document.querySelector('#hamberger ul');
+let hamberger = document.querySelector('#hamberger');
+
 function animationSetup (arrayOfElementID) {
 	let arrayElement = arrayOfElementID.map( elementID => {
 		activationStatus[elementID] = true;
@@ -47,5 +50,15 @@ function smoothScroll(to, duration) {
 		if(body.scrollTop === to.offsetTop) return;
 		smoothScroll(to, duration - 10);
 	}, 10)
+}
+
+function toggleMenu() {
+	if(menu.className === 'hide') {
+		hamberger.className = 'active';
+		menu.className = '';
+	}else {
+		menu.className = 'hide';
+		hamberger.className = '';
+	}
 }
 
