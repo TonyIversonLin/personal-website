@@ -26,7 +26,7 @@ header {
 	background: linear-gradient(
                      rgba(20,20,20, 0.4), 
                      rgba(20,20,20, 0.4)),
-                     url('./practice/resource/portfolio4.jpg');
+                     url('../img/portfolio4.jpg');
 	background-size: cover;
 	background-position: center;
 	color: white;

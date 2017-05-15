@@ -24,7 +24,7 @@ div.landing {
 	background: linear-gradient(
                      rgba(20,20,20, 0.4), 
                      rgba(20,20,20, 0.4)),
-                     url('./practice/resource/landing.jpg');
+                     url('../img/landing.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 	text-align: center;
@@ -233,7 +233,7 @@ div.about .skills {
 	background: linear-gradient(
                      rgba(20,20,20, 0.7), 
                      rgba(20,20,20, 0.7)),
-                     url('./practice/resource/skill.jpg');
+                     url('../img/skill.jpg');
 	background-size: cover;
 	background-position: center;
 	color: white;

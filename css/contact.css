@@ -19,7 +19,7 @@ body {
 	background: linear-gradient(
                      rgba(255, 255, 255, 1),
                      rgba(255, 255, 255, 0)),
-                     url('./practice/resource/contact.png');
+                     url('../img/contact.png');
   background-size: cover;
 }
 
@@ -36,7 +36,7 @@ body {
 	background: linear-gradient(
                      rgba(20,20,20, 0.5), 
                      rgba(20,20,20, 0.5)),
-                     url('./practice/resource/call2.jpg');
+                     url('../img/call2.jpg');
   background-size: cover;
   background-position: 50% 53%;
   margin: 0 0 4rem 0; 
