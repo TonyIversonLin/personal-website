@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Contact - Tony Lin</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<script src="https://use.fontawesome.com/821afdbeaf.js"></script>
@@ -66,17 +67,17 @@
 					<form>
 						<div class="form-group">
 							<label>Name</label>
-							<input type="text" name="" class="form-control">
+							<input type="text" name="" class="form-control" required>
 						</div>
 						
 						<div class="form-group">
 							<label>Email</label>
-							<input type="email" name="" class="form-control">
+							<input type="email" name="" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
 						</div>
 
 						<div class="form-group">
 							<label>Message</label>
-							<textarea class="form-control" rows='4' placeholder="Tell me about your concern"></textarea>
+							<textarea class="form-control" rows='4' placeholder="Tell me about your concern" required></textarea>
 						</div>
 						<button type="submit" class="btn btn-info">Submit  <i class="fa fa-paper-plane fa-1x" aria-hidden="true"></i></button>
 					</form>
