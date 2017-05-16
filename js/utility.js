@@ -8,7 +8,7 @@ let activationStatus = {};
 let navElement = document.querySelector('nav');
 
 let menu = document.querySelector('#hamberger ul');
-let hamberger = document.querySelector('#hamberger');
+var hamberger = document.querySelector('#hamberger');
 
 function animationSetup (arrayOfElementID) {
 	let arrayElement = arrayOfElementID.map( elementID => {
@@ -16,9 +16,8 @@ function animationSetup (arrayOfElementID) {
 		return document.querySelector(elementID)
 	});
 	let ElementActivationLocation = arrayElement.map( element => element.offsetTop - (3/5) * height);
-
 	return function activation() {
-		let currentLocation = body.scrollTop;
+		let currentLocation = document.documentElement.scrollTop || body.scrollTop;
 		if(navigationStatus){
 			navElement.className += ' on-scroll';
 			navigationStatus = false;
@@ -42,7 +41,6 @@ function jump(event) {
 function smoothScroll(to, duration) {
 	if(duration <= 0) return;
 	let difference = to.offsetTop- 150 - body.scrollTop;
-	console.log('difference', difference);
 	let step = difference / duration * 10;
 
 	setTimeout(() => {
